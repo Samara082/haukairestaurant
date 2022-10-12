@@ -1,0 +1,15 @@
+/* THE HAUKAI RESTAURANT - CSS Document */
+
+/* Universal box sizing */
+* {box-sizing: border-box;}body{margin: 0;}
+/* Fonts & Headings */ h1{font-family:"GFS Didot",serif;color:#373F27;font-size:40px;}h2{font-family:"GFS Didot",serif;color:#aaa;font-size:30px;}h3{font-family:"Montserrat",sans-serif;color:#aaa;font-size:24px;font-weight:400;}p,body{font-family:"Montserrat",sans-serif;font-size:15px;font-weight:300;color:black;}.invert{color:white;font-size:2.5vh;}.heavy{font-weight:600;}
+/* Table Font */ td{padding:15px;}th{font-family:"Montserrat",sans-serif;color:#aaa;font-size:24px;font-weight:400;padding:30px;}
+/* Header Logo Image */header img{filter:brightness(.4);width:100%;}.centered{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}.centered img{max-width:75%;height:auto;filter:none;}
+/* Footer Logo Image */ footer img{max-width:50%;height:auto;}
+/* Button Style */.button{background-color:#E9C904;border:3px solid #E9C904;padding:15px 25px;text-align:center;display:inline-block;cursor:pointer;}.button:hover{border:3px solid #373F27;}.button a:link,.button a:hover,.button a:active{display:inline-block;color:#373F27;font-weight:600;font-size:20px;text-decoration:none;}
+/* Image & Media Frames */.image{background-color:#D7CEC7;max-width:100%;padding:1vw;}iframe{border:10px solid #D7CEC7;}.responsive-iframe-container{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden}.responsive-iframe-container iframe,.vresponsive-iframe-container object,.vresponsive-iframe-container embed{position:absolute;top:0;left:0;width:100%;height:100%}
+/* Responsive Media */ @media screen and (max-width:600px){iframe,.centered{width:100%}}@media screen and (max-width:800px){footer ul,footer li{display:inline-block;padding:10px auto;}}
+/* Links */ a{color:#373F27;font-weight:300;text-decoration:underline;}a:hover{color:#373F27;font-weight:600;text-decoration:none;}
+/* Lists */ ul{list-style-type:none;padding:0;margin:0}ul li{margin-top:-1px;padding:12px;font-weight:300;}ul.bullet{list-style-type:circle;padding:0;margin-left:50px}
+/* Icons */ .fa{padding-top:10px;padding-bottom:0;font-size:26px;width:100%;text-shadow:2px 2px 4px #707070;text-align:center;text-decoration:none;display:block;}.fa:hover{opacity:.8;text-decoration:none;}.fa-instagram .fa-facebook .fa-twitter{background:none;color:#373F27;}i.social{display:inline-block;width:60px;}
+/* Input Forms */ input[type=text],input[type=tel],select,textarea{width:100%;padding:12px;border:1px solid #373F27;box-sizing:border-box;display:inline-block;margin-top:6px;margin-bottom:16px;resize:vertical;outline:none;font-family:"Montserrat",sans-serif;color:black;font-size:14px;font-weight:300;}input[type=text]:focus,input[type=tel]:focus,select:focus,textarea:focus{border:2px solid #E9C904;}input[type=submit]{background-color:#E9C904;color:#373F27;font-weight:500;padding:12px 20px;border:3px solid #E9C904;cursor:pointer;box-sizing:border-box;display:inline-block;width:100%;}input[type=submit]:hover{background-color:#E9C904;border:3px solid #373F27;color:#373F27;}

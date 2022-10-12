@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><!--Language: English-->
+     <head>
+        <title>The Haukai Restaurant | Staff Only</title><!--Page title for SEO-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Google Fonts: Didot and Montserrat-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+        <!--Social Media & Hamburger Nav Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--CSS references for style-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+        <link rel="stylesheet" type="text/css" href="../Assets/css/style.css">
+        <style>.w3-theme-light {background-color:#D7CEC7 !important;}</style>
+     </head>
+     <body>
+        <header id="top">
+			<nav class="w3-bar w3-2020-chive w3-large" role="menubar" aria-label="Main menu">
+				<a href="../homepage.html" class="w3-bar-item w3-button w3-padding-16">HOME</a>
+				<a href="about-us.html" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">ABOUT US</a>
+				<a href="menu.html" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">MENU</a>
+				<a href="reservations.html" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">RESERVATIONS</a>
+				<a href="contact.html" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">CONTACT</a>
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-xlarge w3-hide-large w3-hide-medium" onclick="myFunction()" aria-label="Open the menu">&#9776;</a>
+			</nav>
+			<nav id="dropdown" class="w3-bar-block w3-2020-chive w3-large w3-hide w3-hide-large w3-hide-medium" role="menubar" aria-label="Main menu">
+				<a href="about-us.html" class="w3-bar-item w3-button w3-padding-16">ABOUT US</a>
+				<a href="menu.html" class="w3-bar-item w3-button w3-padding-16">MENU</a>
+				<a href="reservations.html" class="w3-bar-item w3-button w3-padding-16">RESERVATIONS</a>
+				<a href="contact.html" class="w3-bar-item w3-button w3-padding-16">CONTACT</a>
+			</nav>
+            <script>/* JS for the responsive Hamburger menu */
+			function myFunction() {
+			var x = document.getElementById("dropdown");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else { 
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+			</script>
+            <section class="w3-display-container w3-center">
+				<picture>
+                    <source srcset="../Assets/images/Mobile/Mobile_Staff_priscilla-du-preez-JCZ2pE-Szpw-unsplash.jpg" media="(max-width: 600px)">
+                    <img src="../Assets/images/Staff_priscilla-du-preez-JCZ2pE-Szpw-unsplash.jpg" alt="The Haukai Restaurant - Staff Hours">
+                </picture>
+                <div class="centered"><!--Logo image & statement in the banner image-->
+                    <img src="../Assets/images/The-Haukai-Restaurant-Logo_White.png" alt="The Haukai Restaurant Logo"/>
+                    <h3 class="invert" style="font-size:2.5vw">experience the culture and cuisine of Aotearoa</h3>
+                </div>
+			</section>
+		</header>
+        <main>
+            <div class="w3-content w3-mobile w3-center w3-padding-large" style="max-width: 800px;">
+                <h1><em>Kaimahi</em> / Staff</h1><br>
+                <h3>Welcome to the staff portal</h3><br>
+                    <p>Check the roster or find staff contact details using the buttons below.</p>
+                    <p>For any urgent staff matters please <a href="mailto:jane@thehakauirestaurant.co.nz">email</a> or <a href="tel:+64-021-123-4567">phone</a> Jane.</p>
+                    <br>
+            </div>
+            <div class="w3-content w3-mobile w3-center w3-padding-large" style="max-width: 800px;">                
+                <button onclick="myFunction('Roster')" class="w3-btn w3-block w3-2020-chive">Staff Roster</button><br><br><!--First Section: Staff Hours Information-->
+                <div id="Roster" class="w3-hide w3-container w3-center w3-white">
+                    <h3>Staff Roster</h3>
+                    <p>Rosters are updated on the first day of every month.</p>
+                    <p>The schedule shows staff hours and duties for the following month.</p>
+                    <p>Staff are expected to note their rostered hours.</p>
+                    <p>Please <a href="mailto:jane@thehakauirestaurant.co.nz">email Jane</a> if you need to request any leave or changes, at least 2 weeks prior to the scheduled shift.</p>
+                    <br>
+                    <div class="w3-container">
+                        <div class="responsive-iframe-container big-container"><!--Embeded Google Calendar with Staff Hours: Large Screen-->
+                            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Australia%2FSydney&src=NWExMGM0OTI3ZDliZDVhNTUxOGU3MzZmYTdjYTVlOTU3YmI3ZTIxMTZjNzEyYzBiYWY0YzEzNDgzYmE1NTM2ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300" width="800" height="800" title="The Haukai Restaurant - Staff Roster Calendar"></iframe>
+                        </div>
+                        <div class="responsive-iframe-container small-container"><!--Embeded Google Calendar with Staff Hours: Small Screen-->
+                            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Australia%2FSydney&mode=AGENDA&src=NWExMGM0OTI3ZDliZDVhNTUxOGU3MzZmYTdjYTVlOTU3YmI3ZTIxMTZjNzEyYzBiYWY0YzEzNDgzYmE1NTM2ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23373f27" width="650" height="650" title="The Haukai Restaurant - Staff Roster Calendar"></iframe>
+                        </div>
+                    </div><br><br>
+                </div>
+                <button onclick="myFunction('Directory')" class="w3-btn w3-block w3-2020-chive">Staff Directory</button><br><br><!--Second Section: Staff Contact Directory-->
+                <div id="Directory" class="w3-hide w3-container w3-center w3-white">
+                    <table class="w3-table w3-bordered"><!--Staff Contact Directory-->
+                        <tr>
+                            <th>NAME</th>
+                            <th>POSITION</th>
+                            <th>MOBILE</th>
+                        </tr>
+                        <tr>
+                            <td>Jane Irvine</td>
+                            <td>Owner</td>
+                            <td><a href="tel:+64-021-123-4567">021-123-4567</a></td>
+                        </tr>
+                        <tr>
+                            <td>Matt Irvine</td>
+                            <td>Owner</td>
+                            <td><a href="tel:+64-021-444-6688">021-444-6688</a></td>
+                        </tr>
+                        <tr>
+                            <td>Emily Smith</td>
+                            <td>Front of House</td>
+                            <td><a href="tel:+64-021-987-6543">021-987-6543</a></td>
+                        </tr>
+                        <tr>
+                            <td>Tane Stephens</td>
+                            <td>Head Chef</td>
+                            <td><a href="tel:+64-021-111-0101">021-111-0101</a></td>
+                        </tr>
+                        <tr>
+                            <td>Jack Harlow</td>
+                            <td>Kitchen Hand</td>
+                            <td><a href="tel:+64-021-757-5757">021-757-5757</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <script>
+                function myFunction(id) {
+                  var x = document.getElementById(id);
+                  if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                  } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                  }
+                }
+                </script>
+            </div>
+            <div class="w3-container w3-center w3-padding-24">
+                <a href="#top">RETURN TO TOP</a><!--Return to top of the page-->
+            </div>
+		</main>
+		<footer class="w3-container w3-theme-light w3-padding-16"><!--Footer-->
+			<div class="w3-row-padding">
+				<div class="w3-third w3-container w3-center w3-mobile"><br><!--Sub-navigation links-->
+                    <ul>
+                        <li><a href="privacy-statement.html">Privacy Statement</a></li>
+                        <li><a href="contact.html">Location & Hours</a></li>
+                        <li><a href="staff-only.html">Staff Login</a></li>
+                    </ul>
+				</div>
+				<div class="w3-third w3-container w3-center w3-mobile"><!--Logo & copyright-->
+					<br><img src="../Assets/images/The-Haukai-Restaurant-Logo_Green.png" alt="The Haukai Restaurant Logo" width="250"/>
+					<p class="w3-small">© Copyright 2022 by The Haukai Restaurant. All rights reserved.</p>
+				</div>
+				<div class="w3-third w3-container w3-center w3-mobile"><br><!--Social media icons & links-->
+                    <p>Follow us on social media</p>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="View our Instagram"><i class="fa fa-instagram social" aria-hidden="true" title="Instagram: The Haukai Restaurant"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="View our Facebook"><i class="fa fa-facebook social" aria-hidden="true" title="Facebook: The Haukai Restaurant"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="View our Twitter"><i class="fa fa-twitter social" aria-hidden="true" title="Twitter: The Haukai Restaurant"></i></a><br><br>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

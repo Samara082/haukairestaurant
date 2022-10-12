@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><!--Language: English-->
+     <head>
+        <title>The Haukai Restaurant | Homepage</title><!--Page title for SEO-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Google Fonts: Didot and Montserrat-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+        <!--Social Media & Hamburger Nav Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--CSS references for style-->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+        <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+		<style>.w3-theme-light {background-color:#D7CEC7 !important;}</style>
+     </head>
+     <body>
+		<header id="top">
+			<nav class="w3-bar w3-2020-chive w3-large" role="menubar" aria-label="Main menu">
+				<a href="homepage.html" class="w3-bar-item w3-button w3-padding-16">HOME</a>
+				<a href="Pages/about-us.html" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">ABOUT US</a>
+				<a href="Pages/menu.html" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">MENU</a>
+				<a href="Pages/reservations.html" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">RESERVATIONS</a>
+				<a href="Pages/contact.html" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">CONTACT</a>
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-xlarge w3-hide-large w3-hide-medium" onclick="myFunction()" aria-label="Open the menu">&#9776;</a>
+			</nav>
+			<nav id="dropdown" class="w3-bar-block w3-2020-chive w3-large w3-hide w3-hide-large w3-hide-medium" role="menubar" aria-label="Main menu">
+				<a href="Pages/about-us.html" class="w3-bar-item w3-button w3-padding-16">ABOUT US</a>
+				<a href="Pages/menu.html" class="w3-bar-item w3-button w3-padding-16">MENU</a>
+				<a href="Pages/reservations.html" class="w3-bar-item w3-button w3-padding-16">RESERVATIONS</a>
+				<a href="Pages/contact.html" class="w3-bar-item w3-button w3-padding-16">CONTACT</a>
+			</nav>
+            <script>/* JS for the responsive Hamburger menu */
+			function myFunction() {
+			var x = document.getElementById("dropdown");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else { 
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+			</script>
+			<section class="w3-display-container w3-center">
+				<picture>
+                    <source srcset="../Assets/images/Mobile/Mobile_Homepage_max-delsid-0geTqSZ76Xg-unsplash.jpg" media="(max-width: 600px)">
+                    <img src="Assets/images/Homepage_max-delsid-0geTqSZ76Xg-unsplash.jpg" alt="The Haukai Restaurant - Homepage">
+                </picture>
+				<div class="centered"><!--Logo image & statement in the banner image-->
+					<img src="Assets/images/The-Haukai-Restaurant-Logo_White.png" alt="The Haukai Restaurant Logo"/>
+					<h3 class="invert">experience the culture and cuisine of Aotearoa</h3>
+				</div>
+			</section>
+		</header>
+        <main>
+			<div class="w3-content w3-mobile w3-center w3-padding-large" style="max-width: 800px;"><!--First Content Section: Introduction-->
+				<h1><em>Nau Mai, Harere Mai</em> / Welcome</h1><br>
+				<p>The Maori phrase <em>Kai Waho</em> can be translated as outdoor cuisine. It can also describe a master, or teacher, of the ways of the wilderness. For guests at The Haukai Restaurant, on the beautiful tribal lands of the Tuwharetoa iwi, both these meanings merge in an unforgettable and unique cultural, food and wilderness experience.</p>
+				<p>We look forward welcoming you as our <em>manuhuri</em> (guest) and sharing our knowledge and passion with you.</p>
+				<br>
+				<div class="button"><!--Call to Action Link: Book Now-->
+					<a title="Make a reservation" href="Pages/reservations.html">BOOK NOW</a><!--Link to Reservations page-->
+				</div><br>
+			</div>
+			<div class="w3-container w3-padding-24"><!--Second Content Section: Video of Kai Experience-->
+				<div class="responsive-iframe-container"><!--Embedded YouTube video of Kai Experience-->
+					<iframe src="https://www.youtube.com/embed/S7zlJ4qpQCc?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=1" title="YouTube Video - Traditional Maori Hangi, Kai and Cooking" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div><br>
+				<div class="w3-content w3-mobile w3-center w3-padding-24" style="max-width: 800px;">
+					<h2>Experience Aotearoa</h2>
+					<p>Discover the essence of Maori culture with our magnificent natural wilderness experience peppered with new knowledge, great food, storytelling, excellent company and if you want, a little adventure too.</p><br>
+					<div class="button"><!--Call to Action Link: Learn More-->
+						<a title="Learn more about the experience" href="Pages/about-us.html">LEARN MORE</a><!--Link to About Us page-->
+					</div><br>
+				</div>
+			</div>
+			<div class="w3-row-padding w3-center w3-mobile"><!--Third Content Section: 3-column section that links to other pages-->
+				<div class="w3-third w3-container w3-padding">
+					<img class="image" src="Assets/images/The-Team_pexels-ron-lach-8879620.jpg" alt="Head chef from The Haukai Restaurant">
+					<h3>The Team</h3>
+					<p>Learn more about the owners and staff of The Haukai Restaurant as they share their favourite dishes and inspiration.</p><br>
+					<div class="button"><!--Call to Action Link: Meet The Team-->
+						<a title="Meet the team at The Haukai Restaurant" href="Pages/about-us.html#Our_People">MEET THE TEAM</a><!--Link to The Team anchor on About Us page-->
+					</div>
+				</div>
+				<div class="w3-third w3-container w3-padding">
+					<img class="image" src="Assets/images/The-Experience_max-delsid-oBwnHsjCx9A-unsplash.jpg" alt="Chef preparing and slicing a steak">
+					<h3>The Experience</h3>
+					<p>Dine with us to experience the unique cuisine and culture of Aotearoa. Find out about our opening hours and location.</p><br>
+					<div class="button"><!--Call to Action Link: Visit Us-->
+						<a title="View opening hours and location" href="Pages/contact.html">VISIT US</a><!--Link to Contact page-->
+					</div>
+				</div>
+				<div class="w3-third w3-container w3-padding">
+					<img class="image" src="Assets/images/The-Food_john-fornander-jJIb2e7Jkcs-unsplash.jpg" alt="Chef plating up food in a row">
+					<h3>The Food</h3>
+					<p>Our menu changes seasonally, so that we can bring you the freshest ingredients, prepared in traditional ways.</p><br>
+					<div class="button"><!--Call to Action Link: View The Menu-->
+						<a title="View the seasonal menu" href="Pages/menu.html">VIEW THE MENU</a><!--Link to Menu page-->
+					</div>
+				</div>
+			</div>
+			<div class="w3-content w3-mobile w3-center w3-padding-24" style="max-width: 800px;"><!--Fourth Content Section: Newsletter sign-up bar-->
+				<br><br>
+				<form class="w3-container w3-padding-24" action="/action_page.php"><!--Sign-up form-->
+					<h2>Follow the Journey</h2>
+					<p>Subscribe to our newsletter to learn more about Maori culture, traditional recipes, <em>karakia</em> (song), and much more.</p>
+					<input type="text" placeholder="Name" name="name" required maxlength="40" aria-label="Your name">
+					<input type="text" placeholder="Email address" name="mail" required maxlength="60" aria-label="Your email address">
+					<input class="w3-btn" type="submit" value="SUBSCRIBE" aria-label="Submit">
+				</form><br><br>
+			</div>
+			<div class="w3-container w3-center w3-padding-24">
+                <a href="#top">RETURN TO TOP</a><!--Return to top of the page-->
+            </div>
+		</main>
+		<footer class="w3-container w3-theme-light w3-padding-16"><!--Footer-->
+			<div class="w3-row-padding">
+				<div class="w3-third w3-container w3-center w3-mobile"><br><!--Sub-navigation links-->
+                    <ul>
+                        <li><a href="Pages/privacy-statement.html">Privacy Statement</a></li>
+                        <li><a href="Pages/contact.html">Location & Hours</a></li>
+                        <li><a href="Pages/staff-only.html">Staff Login</a></li>
+                    </ul>
+				</div>
+				<div class="w3-third w3-container w3-center w3-mobile"><!--Logo & copyright-->
+					<br><img src="Assets/images/The-Haukai-Restaurant-Logo_Green.png" alt="The Haukai Restaurant Logo" width="250"/>
+					<p class="w3-small">© Copyright 2022 by The Haukai Restaurant. All rights reserved.</p>
+				</div>
+				<div class="w3-third w3-container w3-center w3-mobile"><br><!--Social media icons & links-->
+                    <p>Follow us on social media</p>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="View our Instagram"><i class="fa fa-instagram social" aria-hidden="true" title="Instagram: The Haukai Restaurant"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="View our Facebook"><i class="fa fa-facebook social" aria-hidden="true" title="Facebook: The Haukai Restaurant"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="View our Twitter"><i class="fa fa-twitter social" aria-hidden="true" title="Twitter: The Haukai Restaurant"></i></a><br><br>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
