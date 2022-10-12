@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Staff Login"
-AuthUserFile /Documents/BIT607_A3_5045883/.htpasswd
+AuthUserFile /app/.htpasswd
 Require valid-user
