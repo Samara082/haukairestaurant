@@ -2,7 +2,7 @@
 
 /* Universal box sizing */
 * {box-sizing: border-box;}body{margin: 0;}
-/* Fonts & Headings */ h1{font-family:"GFS Didot",serif;color:#373F27;font-size:40px;}h2{font-family:"GFS Didot",serif;color:#aaa;font-size:30px;}h3{font-family:"Montserrat",sans-serif;color:#aaa;font-size:24px;font-weight:400;}p,body{font-family:"Montserrat",sans-serif;font-size:15px;font-weight:300;color:black;}.invert{color:white;font-size:2.5vh;}.heavy{font-weight:600;}
+/* Fonts & Headings */ h1{font-family:"GFS Didot",serif;color:#373F27;font-size:40px;}h2, table caption{font-family:"GFS Didot",serif;color:#aaa;font-size:30px;}h3{font-family:"Montserrat",sans-serif;color:#aaa;font-size:24px;font-weight:400;}p,body{font-family:"Montserrat",sans-serif;font-size:15px;font-weight:300;color:black;}.invert{color:white;font-size:2.5vh;}.heavy{font-weight:600;}
 /* Table Font */ td{padding:15px;}th{font-family:"Montserrat",sans-serif;color:#aaa;font-size:24px;font-weight:400;padding:30px;}
 /* Header Logo Image */header img{filter:brightness(.4);width:100%;}.centered{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}.centered img{max-width:75%;height:auto;filter:none;}
 /* Footer Logo Image */ footer img{max-width:50%;height:auto;}
